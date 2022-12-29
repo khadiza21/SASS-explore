@@ -1,18 +1,49 @@
 $header-bgcolor: #df8b17;
-$main-bgcolor: rgb(23, 57, 23);
-$footer-bgcolor:#d43f45;
+$main-bgcolor: rgb(28, 45, 28);
+$footer-bgcolor: #d43f45;
+$para-fontsize: 25px;
+
 // browser reset code
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     background: $header-bgcolor;
 }
-main{
+
+main {
     background: $main-bgcolor;
     color: aqua;
 
 }
 
+#about p {
+    font-size: $para-fontsize;
+}
+// scss nesting style
+nav ul {
+    list-style-type: none;
+    li {
+        display: inline-block;
+        margin: 0 15px;
+        a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: 0.4s;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #000;
+        }
+    }
+}
+
+
+nav ul li footer {
+    background-color: $footer-bgcolor;
+}
