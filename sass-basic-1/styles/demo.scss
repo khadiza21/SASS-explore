@@ -1,0 +1,18 @@
+$header-bgcolor: #df8b17;
+$main-bgcolor: rgb(23, 57, 23);
+$footer-bgcolor:#d43f45;
+// browser reset code
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background: $header-bgcolor;
+}
+main{
+    background: $main-bgcolor;
+    color: aqua;
+
+}
+
