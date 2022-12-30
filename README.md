@@ -27,7 +27,13 @@ SASS - explore
     @include para-style;}
 
     
-###### 
+###### Use @for in SASS loop
+- 2 ways -> start through end (includes end number), start to end (does not include end number)
+- ex: @for $i from 1 through 12{
+    //do something}
+
+- @for and @while available 
+
 ###### 
 ###### 
 ###### 
