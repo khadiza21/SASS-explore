@@ -2,7 +2,7 @@
 // @use "./util/index"; // type 01
 @use "./util/index" as var;
 
-
+// -----------------------------------------------------------------------
 // using mixin and para style  
 // type 01
 // @mixin para-style{
@@ -22,7 +22,7 @@
 #education h3{
 @include para-style(23px,justify );
 }
-
+// ---------------------------------------------------------------------
 
 // extend keyword explore and use (inheritance with extend)
 .btn{
@@ -36,8 +36,7 @@
     background-color: beige;
 
 }
-
-
+// -------------------------------------------------------------------------
 
 
 
@@ -50,3 +49,24 @@ header{
 main{
     background-color: var.$main_bg;
     }
+// ------------------------------------------------------------------------
+
+// if, else if and else in sass - explore and use
+@mixin setFontSize($value){
+ @if $value == small {
+    font-size: 14px;
+ }
+ @else if $value == medium {
+    font-size: 18px;
+ }
+ @else if $value == large {
+    font-size: 24px;
+ }
+ @else{
+    font-size: none;
+ }
+}
+
+#conditions h6{
+@include setFontSize(large);
+}
