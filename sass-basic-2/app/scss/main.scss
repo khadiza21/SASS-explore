@@ -2,8 +2,8 @@
 // @use "./util/index"; // type 01
 @use "./util/index" as var;
 
-// using mixin and para style  
 
+// using mixin and para style  
 // type 01
 // @mixin para-style{
 //     font-size: 16px;
@@ -22,6 +22,24 @@
 #education h3{
 @include para-style(23px,justify );
 }
+
+
+// extend keyword explore and use (inheritance with extend)
+.btn{
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+  
+}
+.inpt{
+    @extend .btn;
+    background-color: beige;
+
+}
+
+
+
+
 
 header{
     // background-color: index.$header_bg; //type 01
