@@ -1,11 +1,34 @@
 @forward "./base/index";
+// @use "./util/index"; // type 01
 @use "./util/index" as var;
 
-header{
-    background-color: index.$header_bg;
-    padding: 1rem;
+// using mixin and para style  
+
+// type 01
+// @mixin para-style{
+//     font-size: 16px;
+//     text-align: justify;
+// }
+
+// #education h4{
+// @include para-style;
+// }
+
+// type 02
+@mixin para-style($size,$style){
+    font-size: $size;
+    text-align: $style;
+}
+#education h3{
+@include para-style(23px,justify );
 }
 
+header{
+    // background-color: index.$header_bg; //type 01
+    background-color: var.$header_bg; //type 02
+    padding: 1rem;
+    
+}
 main{
     background-color: var.$main_bg;
-}
+    }
