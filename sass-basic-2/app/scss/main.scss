@@ -1,22 +1,11 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    outline: none;
-}
+@forward "./base/index";
+@use "./util/index" as var;
+
 header{
-    background-color: bisque;
+    background-color: index.$header_bg;
     padding: 1rem;
 }
+
 main{
-    background-color: azure;
-    padding: 1rem;
+    background-color: var.$main_bg;
 }
-
-
-
-
-
-
-

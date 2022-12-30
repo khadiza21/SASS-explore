@@ -1,6 +1,6 @@
 {
-      // liveSass setup
-  "liveSassCompile.settings.formats": [
+ // liveSass setup
+ "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
       "extensionName": ".css",
@@ -8,4 +8,5 @@
     }
   ],
   "liveSassCompile.settings.generateMap": true,
+
 }
